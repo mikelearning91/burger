@@ -8,14 +8,14 @@ var source = {
         host: 'localhost',
         user: 'root',
         password: 'root',
-        database: 'burger_db'
+        database: 'burgers_db'
     },
     jawsDB: {
         port: 3306,
         host: 'localhost',
         user: 'root',
         password: 'root',
-        database: 'burger_db'
+        database: 'burgers_db'
     }
 
 }

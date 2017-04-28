@@ -1,5 +1,5 @@
 /* O.R.M. - write functions that takes inputs and conditions and turn them into database commands like SQL. */
-var connection = require('../config/connection.js');
+var connection = require('../config/connections.js');
 
 function objToSql(ob) {
     // column1=value, column2=value2,...
