@@ -1,19 +1,32 @@
+<div class="container header-container">
+  <img class="logo" src="assets/img/burger-monger.png">
+</div>
+<!-- Add a burger -->
 <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+          <h1>Burger Monger</h1>
+   
+          <form id="add" action="/burgers/add" method="POST">
+            <textarea name="burger_name" placeholder="Enter a burger you want to eat then click 'Add Your Burger!'"></textarea><br>
+            <input type="submit" class="btn btn-warning" value="Add Your Burger!" />
+          </form>
+      </div>
+    </div>
 
-  <img src="assets/img/burger.png/jpeg/whatever">
-  <h1>Devour Burgers Like A Monger!</h1>
-
+<!-- List of your burgers -->
   <div class="row">
-
       <div class="col-sm-6">
-        <h2>Subtitle</h2>
+        <h2>Your Burgers</h2>
+        <hr>
 	    	{{#each burgers}}
         {{#unless this.devoured}}
           <form id="update" action="/burgers/devour/{{this.id}}?_method=PUT" method="POST">
             <input type="hidden" name="devoured" value="true">
-            <button class="btn btn-success" type="submit">Devour This Burger!</button>
-            {{> burgers/delete-burger}}
+            <button class="btn btn-success" type="submit">DEVOUR THIS BURGER</button>
+            
           </form>
+          {{> burgers/delete-burger}}
         
           <div class="well">
             {{this.id}}. {{this.burger_name}}
@@ -22,24 +35,17 @@
         {{/each}}
       </div>
 
+<!-- Burgers you've devoured' -->
       <div class="col-sm-6">
         <h2>Burgers You've Devoured</h2>
-        <label>You little Burger Monger, you... ;)</label>
+        <hr>
         {{#each burgers}}
           {{#if this.devoured}}
-            <div class="well-devoured">
+            <div class="well devoured">
               {{this.id}}. {{this.burger_name}}
             </div>
             {{/if}}
             {{/each}}
       </div>
     </div>
-
-        <h2>Enter a burger you want to eat then click "Submit"</h2>
-  
-      <form id="add" action="/burgers/add" method="POST">
-        <textarea name="burger_name"></textarea>
-        <button class="btn btn-warning" type="submit">Submit</button>
-      </form>
-
 </div>
