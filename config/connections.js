@@ -17,7 +17,6 @@ var source = {
         password: 'root',
         database: 'burgers_db'
     }
-
 }
 
 var connection = mysql.createConnection(source.jawsDB);
