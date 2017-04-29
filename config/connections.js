@@ -14,7 +14,7 @@ var mysql = require('mysql'),
             host: 'otmaa16c1i9nwrek.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
             user: 'zc4fhf9asxxwdtbt',
             password: 'ane9ogwbjgcsviwn',
-            database: 'burgers_db'
+            database: 'he0o2bfs4c22eipy'
         }
     };
 
