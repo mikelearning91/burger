@@ -29,9 +29,9 @@
           </form>
           {{> burgers/delete-burger}}
         
-          <div class="well">
-            {{this.id}}. {{this.burger_name}}
-          </div>
+          <div class="well burger-item">
+            <span>{{this.burger_name}}</span>
+          </div><br>
         {{/unless}}
         {{/each}}
       </div>
