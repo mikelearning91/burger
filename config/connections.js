@@ -6,15 +6,15 @@ var source = {
     localhost: {
         port: 3306,
         host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'burgers_db'
+        user: 'root', // Your MySql username
+        password: 'root', // Your MySql password
+        database: 'burgers_db' // Run schema and seeds in burger/db directory
     },
     jawsDB: {
         port: 3306,
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
+        host: 'otmaa16c1i9nwrek.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'zc4fhf9asxxwdtbt',
+        password: 'ane9ogwbjgcsviwn',
         database: 'burgers_db'
     }
 }
