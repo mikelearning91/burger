@@ -72,6 +72,10 @@ button {
     color: #e64f18;
 }
 
+.well span {
+    font-size: 21px;
+}
+
 .devoured {
     width: 100%;
 }
