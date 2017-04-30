@@ -68,12 +68,14 @@ button {
     height: 100%;
     color: #e64f18;
     padding: 19px;
+    font-size: 18px;
 }
 
-#add>button {
+#add>input[type=submit] {
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
+    font-size: 15px;
 }
 
 .well {
@@ -124,4 +126,16 @@ button {
 
 .delete-button {
     float: left;
+}
+
+@media (max-width:778px) {
+    .well {
+        width: 100%;
+    }
+    #add>textarea {
+        height: 110px;
+    }
+    .add-container {
+        margin-bottom: 25px;
+    }
 }
